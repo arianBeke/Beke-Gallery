@@ -36,5 +36,11 @@ export default {
         },
       ],
     },
+    {
+      name: 'dateAdded',
+      type: 'string',
+      title: 'Date Added',
+      description: 'The date when the blog article was added.',
+    },
   ],
 }

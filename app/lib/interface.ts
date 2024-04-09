@@ -1,8 +1,9 @@
-export interface simpleBlogCard {
+export interface BlogCard {
   title: string;
   smallDescription: string;
   currentSlug: string;
   titleImage: any;
+
 }
 
 export interface fullBlog {
@@ -10,4 +11,5 @@ export interface fullBlog {
   title: string;
   content: any;
   titleImage: any;
+  dateAdded: any;
 }
