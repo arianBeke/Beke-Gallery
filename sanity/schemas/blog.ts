@@ -1,17 +1,17 @@
 export default {
   name: 'blog',
   type: 'document',
-  title: 'Blog',
+  title: 'Image Gallery',
   fields: [
     {
       name: 'title',
       type: 'string',
-      title: 'Title of blog article',
+      title: 'Title of Image',
     },
     {
       name: 'slug',
       type: 'slug',
-      title: 'Slug of your blog article',
+      title: 'Slug for your Image',
       options: {
         source: 'title',
       },
@@ -19,17 +19,17 @@ export default {
     {
       name: 'titleImage',
       type: 'image',
-      title: 'Title Image',
+      title: 'Image',
     },
     {
       name: 'smallDescription',
       type: 'text',
-      title: 'Small Description',
+      title: 'Published by:',
     },
     {
       name: 'content',
       type: 'array',
-      title: 'Content',
+      title: 'Description:',
       of: [
         {
           type: 'block',

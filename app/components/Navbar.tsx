@@ -2,7 +2,7 @@ import Link from "next/link";
 
 
 const navigation = [
-  { name: 'Contact', href: '../../pages/Contact' },
+  { name: 'Support', href: './pages/support/' },
 ];
 
 export default function Navbar() {

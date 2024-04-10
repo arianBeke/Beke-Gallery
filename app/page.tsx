@@ -29,13 +29,15 @@ export default async function Home() {
       <div className="grid grid-cols-1 md:grid-cols-2 mt-5 w-[800px] gap-10">
         {data.map((post, idx) => (
           <div className="ring-2  ring-white" key={idx}>
-            <Image
-              src={urlFor(post.titleImage).url()}
-              alt="image"
-              width={500}
-              height={500}
-              className="h-[250px] object-cover"
-            />
+            <div className="ring-2 ring-white">
+              <Image
+                src={urlFor(post.titleImage).url()}
+                alt="image"
+                width={500}
+                height={500}
+                className="h-[250px] object-cover"
+              />
+            </div>
 
             <div className="mt-5 p-7">
               <h3 className="text-lg line-clamp-2 text-[#00df9a] font-bold">{post.title}</h3>
