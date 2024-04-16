@@ -44,9 +44,11 @@ export default async function Home() {
               <p className="line-clamp-3 text-sm mt-5 text-white">
                 {post.smallDescription}
               </p>
-              <button className="rounded-md w-full bg-[#00df9a] mt-5 hover:text-[#00df9a] text-black hover:bg-gray-700 transition-colors duration-300  px-3.5 py-2.5 text-sm font-semibold shadow-sm  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
-                <Link href={`/blog/${post.currentSlug}`}>View Image</Link>
-              </button>
+              <Link href={`/blog/${post.currentSlug}`}>
+                <button className="rounded-md w-full bg-[#00df9a] mt-5 hover:text-[#00df9a] text-black hover:bg-gray-700 transition-colors duration-300  px-3.5 py-2.5 text-sm font-semibold shadow-sm  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+                View Image
+                </button>
+              </Link>
             </div>
           </div>
         ))}
