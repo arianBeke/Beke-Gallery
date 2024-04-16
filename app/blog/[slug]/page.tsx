@@ -32,7 +32,7 @@ export default async function BlogArticle({
     <div className="max-w-2xl mx-auto px-4 mt-16">
       <h1>
         <span className="block text-base text-center text-white text-primary font-semibold tracking-wide uppercase">
-          <span className="text-[#00df9a] ">Date added:</span>{data.dateAdded}
+          <span className="text-[#00df9a] ">Date added: </span>{data.dateAdded}
         </span>
         <span className="mt-2 block text-3xl text-white text-center leading-8 font-bold tracking-tight sm:text-4xl">
           {data.title}
