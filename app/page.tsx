@@ -25,7 +25,7 @@ export default async function Home() {
   console.log(data);
 
   return (
-    <div className="flex flex-col items-center mt-5">
+    <div className="flex h-auto  flex-col items-center mt-5">
       <div className="grid grid-cols-1 md:grid-cols-2 mt-5 w-[800px] gap-10">
         {data.map((post, idx) => (
           <div className="ring-2  ring-white" key={idx}>
@@ -40,8 +40,9 @@ export default async function Home() {
             </div>
 
             <div className="mt-5 p-7">
-              <h3 className="text-lg line-clamp-2 text-[#00df9a] font-bold">{post.title}</h3>
-              <p className="line-clamp-3 text-sm mt-5 text-white">
+              <h3 className="text-lg line-clamp-2 text-white font-bold">{post.title}</h3>
+              <p className="line-clamp-3 pb-1 text-sm mt-5 text-[#00df9a]">
+                <span className="text-white">Published by: </span>
                 {post.smallDescription}
               </p>
               <Link href={`/blog/${post.currentSlug}`}>
@@ -53,6 +54,7 @@ export default async function Home() {
           </div>
         ))}
       </div>
+      <div className="h-40"></div>
     </div>
   );
 }

@@ -31,10 +31,11 @@ export default async function BlogArticle({
   return (
     <div className="max-w-2xl mx-auto px-4 mt-16">
       <h1>
-        <span className="block text-base text-center text-white text-primary font-semibold tracking-wide uppercase">
-          <span className="text-[#00df9a] ">Date added: </span>{data.dateAdded}
+        <span className="block text-base text-center text-white text-primary font-semibold tracking-wide ">
+          Date Published:
+          <span className="text-[#00df9a]"> {data.dateAdded}</span>
         </span>
-        <span className="mt-2 block text-3xl text-white text-center leading-8 font-bold tracking-tight sm:text-4xl">
+        <span className="mt-2 block text-3xl pt-1 text-white text-center leading-8 font-bold tracking-tight sm:text-4xl">
           {data.title}
         </span>
       </h1>
@@ -45,10 +46,10 @@ export default async function BlogArticle({
         height={800}
         alt="Title Image"
         priority
-        className="rounded-lg mt-8 "
+        className="rounded-lg ring-2 ring-white mt-8 "
       />
-
-      <div className="mt-16 text-center text-white text-2xl justify-center prose prose-blue prose-lg dark:prose-invert prose-li:marker:text-primary prose-a:text-primary">
+  
+      <div className="mt-16 text-center text-white text-2xl justify-center">
         <PortableText value={data.content} />
       </div>
       <div className=" mt-52"></div>

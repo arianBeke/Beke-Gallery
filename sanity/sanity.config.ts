@@ -4,7 +4,7 @@ import {schemaTypes} from './schemas'
 
 export default defineConfig({
   name: 'default',
-  title: 'nextjs-14-blog',
+  title: 'Beke Gallery',
 
   projectId: 'gf3r168j',
   dataset: 'production',
